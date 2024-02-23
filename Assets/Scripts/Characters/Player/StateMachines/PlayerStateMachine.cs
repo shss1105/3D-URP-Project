@@ -12,6 +12,7 @@ public class PlayerStateMachine : StateMachine
     public PlayerRunState RunState { get; }
     public PlayerJumpState JumpState { get; }
     public PlayerFallState FallState { get; }
+    public PlayerComboAttackState ComboAttackState { get; }
 
     // 
     public Vector2 MovementInput { get; set; }
@@ -22,6 +23,8 @@ public class PlayerStateMachine : StateMachine
     public float JumpForce { get; set; }
 
     public Transform MainCameraTransform { get; set; }
+    public bool IsAttacking { get; set; }
+    public int ComboIndex { get; set; }
 
     public PlayerStateMachine(Player player)
     {
@@ -32,6 +35,7 @@ public class PlayerStateMachine : StateMachine
         RunState = new PlayerRunState(this);
         JumpState = new PlayerJumpState(this);
         FallState = new PlayerFallState(this);
+        ComboAttackState = new PlayerComboAttackState(this);
 
         MainCameraTransform = Camera.main.transform;
 
