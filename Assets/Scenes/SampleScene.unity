@@ -230,6 +230,7 @@ GameObject:
   - component: {fileID: 120832554}
   - component: {fileID: 120832556}
   - component: {fileID: 120832555}
+  - component: {fileID: 120832557}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -316,6 +317,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1eaedc03bf6a274a801f73e74561b1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &120832557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120832552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066ab4aef86523d44849f9fa1b164297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 120832555}
+  drag: 0.3
 --- !u!1 &136464222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,7 +1416,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28664
+  m_Name: pb_Mesh37644
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
